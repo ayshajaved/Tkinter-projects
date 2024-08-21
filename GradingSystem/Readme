@@ -1,0 +1,58 @@
+# Grading System
+
+## Project Description
+
+The Grading System is a Python application using `tkinter` to create a graphical user interface (GUI) for calculating and displaying student grades. This project allows users to input their name and marks for various subjects and then calculates and displays the percentage in a message box. It is designed to handle basic error checking and provide user feedback via message boxes.
+
+## Components
+
+- **tkinter**: Used for creating the GUI components.
+- **tkinter.messagebox**: For displaying result and error messages.
+- **Python Standard Libraries**: Utilized for basic operations and functionality.
+
+## Features
+
+- **User Input**: Prompts the user to enter their name and marks for various subjects.
+- **Result Calculation**: Calculates the percentage based on the entered marks.
+- **Error Handling**: Handles invalid input and displays appropriate error messages.
+- **Message Boxes**: Displays the result and error messages in a message box.
+
+## Functions
+
+### `details(d)`
+
+Formats the student details dictionary into a readable string format for display.
+
+**Parameters:**
+- `d` (dict): A dictionary containing student details.
+
+**Returns:**
+- `details_str` (str): A formatted string of student details.
+
+### `show_result(d)`
+
+Displays the student’s result in a message box.
+
+**Parameters:**
+- `d` (dict): A dictionary containing student details.
+
+### `student_info()`
+
+Collects and processes user input, calculates the percentage, and displays results. Handles exceptions for invalid marks and input errors.
+
+## Message Boxes
+
+- **Result Message Box**: Shows the student's name and calculated percentage.
+- **Error Message Box**: Displays an error message if marks are out of range or if invalid input is provided.
+
+## Error Handling
+
+- **Invalid Marks**: Checks if marks are within the range of 0 to 100. Displays an error message if they are not.
+- **General Exceptions**: Catches any unexpected errors and displays a generic error message.
+
+## Example Usage
+
+1. Run the script to open the Grading System GUI.
+2. Enter your name and marks for Biology, Chemistry, Physics, English, Urdu, and Maths.
+3. Click the "COMPILE RESULT" button to calculate and display the result.
+
